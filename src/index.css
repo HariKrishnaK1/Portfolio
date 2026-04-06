@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap");
+
+* {
+  font-family: "Sora", sans-serif;
+}
+
+/* Headings font */
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global styles */
+body {
+  background: black;
+  caret-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth + Snap Scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity; /* smoother than mandatory */
+}
+
+/* Every section acts like a page */
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
